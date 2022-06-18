@@ -1,3 +1,10 @@
+import 'package:flutter/material.dart';
+import '../phone/main.dart';
+import '../discover/main.dart';
+import '../buy/main.dart';
+import '../service/main.dart';
+import '../message/main.dart';
+
 const List<Map<String, String>> tabbarList = [
   {
     'label': '云手机',
@@ -24,4 +31,12 @@ const List<Map<String, String>> tabbarList = [
     'icon': 'assets/images/tabbar/notice-new.png',
     'activeIcon': 'assets/images/tabbar/notice-new-active.png'
   },
+];
+
+const List<Widget> pageList = [
+  Home(),
+  Discover(),
+  Buy(),
+  Service(),
+  Message()
 ];
